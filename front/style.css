@@ -1,0 +1,111 @@
+/* Базовые стили для всей страницы */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Контейнер для приложения */
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin-top: 50px;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+/* Заголовок */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Кнопки */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 5px 0;
+  width: 100%;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Список задач */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
+  background: #eef1f5;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Чекбоксы задач */
+li input[type="checkbox"] {
+  transform: scale(1.3);
+}
+
+/* Фильтры */
+.filters {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.filters button {
+  flex: 1;
+  margin: 0 5px;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+  animation: fadeIn 0.5s ease;
+}
+
+/* Поле ввода задачи */
+#task-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#task-form button {
+  padding: 12px 20px;
+}
